@@ -13,7 +13,7 @@ public class Encode {
         System.out.println("Please Provide Key:");
         int key = scanner.nextInt();
 
-        String cipher = "";
+        String cipher = " ";
         char letters;
 
         for (int x = 0; x < newString.length(); x++) {
@@ -36,12 +36,14 @@ public class Encode {
                 if (letters > 'Z') {
                     letters = (char) (letters+ 'A' - 'Z' -1);
                 } cipher = cipher + letters;
+            } else {
+                cipher = cipher + letters;
             }
         }
 
 
 
-        System.out.println("Encrypted String:" + cipher);
+        System.out.println("Encrypted String: " + cipher);
 
     }
 }

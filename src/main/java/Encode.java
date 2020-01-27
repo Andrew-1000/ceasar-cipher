@@ -11,51 +11,38 @@ public class Encode {
             int letterPosition = letters.indexOf(newString.charAt(x));
             int key = (letterPosition + shiftKey) % 26;
             char changeValue = letters.charAt(key);
+            cipher +=changeValue;
         }
         return cipher;
     }
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Input String: ");
-        String newString = scanner.nextLine();
+    public  static String decrpt (String decrypText, int shftKey) {
 
+        decrypText = decrypText.toLowerCase();
+        String cipherText = "";
+        for (int j  = 0; j < decrypText.length(); j++) {
+            int letterPosition = letters.indexOf(decrypText.charAt(j));
+            int keyVal = (letterPosition - shftKey) % 26;
 
-        System.out.println("Please Provide Key:");
-        int key = scanner.nextInt();
-
-
-        char letters;
-
-         {
-
-            //Shift one character
-            letters = newString.charAt(x);
-
-            if (letters >= 'a' && letters <= 'z') {
-                //Shifting alphabet
-                letters = (char) (letters + key);
-                if (letters > 'z') {
-                    letters = (char) (letters + 'a' - 'z' -1);
-
-                } cipher = cipher + letters;
-
+            if (keyVal <0) {
+                keyVal = letters.length() + keyVal;
             }
-            //For capital letters A - Z
-            else if (letters >= 'A' && letters <= 'Z') {
-                letters = (char) (letters +key);
-                if (letters > 'Z') {
-                    letters = (char) (letters+ 'A' - 'Z' -1);
-                } cipher = cipher + letters;
-            } else {
-                cipher = cipher + letters;
-            }
+            char changeVal = letters.charAt(keyVal);
+            cipherText +=changeVal;
         }
+        return cipherText;
+    }
+    public static void main(String[] args) {
 
-        System.out.println("Input String:" + newString);
-        System.out.println("Encrypted String: " + cipher);
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Input String:");
+        String message = new String();
+        message = scanner.next();
 
-        System.out.println("Decrypted String: " + newString);
+        System.out.println("Encrypted String: " + encrypt(message, 3));
+
+        System.out.println("Decrypted String: " + decrpt(encrypt(message, 3), 3));
+        scanner.close();
 
     }
 }

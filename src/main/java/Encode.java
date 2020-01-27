@@ -13,6 +13,13 @@ public class Encode {
         System.out.println("Please Provide Key:");
         int key = scanner.nextInt();
 
+        String cipher = "";
+        char letters;
+
+        for (int x = 0; x < newString.length(); x++) {
+            letters = newString.charAt(x);
+        }
+
 
 
         System.out.println("Encrypted String:");

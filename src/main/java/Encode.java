@@ -41,9 +41,10 @@ public class Encode {
             }
         }
 
-
-
+        System.out.println("Input String:" + newString);
         System.out.println("Encrypted String: " + cipher);
+
+        System.out.println("Decrypted String: " + newString);
 
     }
 }

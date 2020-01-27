@@ -16,7 +16,7 @@ public class App {
 
 
         System.out.println("Encrypted String: " + Encode.encrypt(output, shKey));
-        System.out.println("Decrypted String: " + Encode.decrpt(Encode.encrypt(output, shKey), shKey));
+//        System.out.println("Decrypted String: " + Decrypt.decrpt(Encode.encrypt(output, shKey), shKey));
 
         scanner.close();
     }

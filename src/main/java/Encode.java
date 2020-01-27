@@ -17,14 +17,31 @@ public class Encode {
         char letters;
 
         for (int x = 0; x < newString.length(); x++) {
+
+            //Shift one character
             letters = newString.charAt(x);
+
+            if (letters >= 'a' && letters <= 'z') {
+                //Shifting alphabet
+                letters = (char) (letters + key);
+                if (letters > 'z') {
+                    letters = (char) (letters + 'a' - 'z' -1);
+
+                } cipher = cipher + letters;
+
+            }
+            //For capital letters A - Z
+            else if (letters >= 'A' && letters <= 'Z') {
+                letters = (char) (letters +key);
+                if (letters > 'Z') {
+                    letters = (char) (letters+ 'A' - 'Z' -1);
+                } cipher = cipher + letters;
+            }
         }
 
 
 
-        System.out.println("Encrypted String:");
+        System.out.println("Encrypted String:" + cipher);
 
-
-        System.out.println("Decrypted String");
     }
 }

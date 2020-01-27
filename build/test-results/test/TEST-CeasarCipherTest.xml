@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="CeasarCipherTest" tests="2" skipped="0" failures="1" errors="0" timestamp="2020-01-26T11:07:16" hostname="andrew-x1" time="0.014">
+<testsuite name="CeasarCipherTest" tests="2" skipped="0" failures="1" errors="0" timestamp="2020-01-27T09:34:14" hostname="andrew-x1" time="0.021">
   <properties/>
-  <testcase name="ceasarCipher_userInputIsString_true" classname="CeasarCipherTest" time="0.012">
-    <failure message="java.lang.AssertionError: expected:&lt;true&gt; but was:&lt;com.sun.org.apache.xpath.internal.operations.String@73bf01b4&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;true&gt; but was:&lt;com.sun.org.apache.xpath.internal.operations.String@73bf01b4&gt;
+  <testcase name="ceasarCipher_userInputIsString_true" classname="CeasarCipherTest" time="0.019">
+    <failure message="java.lang.AssertionError: expected:&lt;true&gt; but was:&lt;com.sun.org.apache.xpath.internal.operations.String@3b013eb9&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;true&gt; but was:&lt;com.sun.org.apache.xpath.internal.operations.String@3b013eb9&gt;
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
 	at org.junit.Assert.assertEquals(Assert.java:118)
@@ -57,7 +57,7 @@
 	at java.base/java.lang.Thread.run(Thread.java:834)
 </failure>
   </testcase>
-  <testcase name="ceasarCipher_identifyCharacterWithinSentence_char" classname="CeasarCipherTest" time="0.002"/>
+  <testcase name="ceasarCipher_identifyCharacterWithinSentence_char" classname="CeasarCipherTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

@@ -6,7 +6,7 @@ public class App {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Input String: ");
 
-        String output = new String();
+        String output = "";
         output = scanner.nextLine();
 
         System.out.println("Enter Key: ");
@@ -16,7 +16,7 @@ public class App {
 
 
         System.out.println("Encrypted String: " + Encode.encrypt(output, shKey));
-//        System.out.println("Decrypted String: " + Decrypt.decrpt(Encode.encrypt(output, shKey), shKey));
+        System.out.println("Decrypted String: " + Decrypt.decrpt(Encode.encrypt(output, shKey), shKey));
 
         scanner.close();
     }

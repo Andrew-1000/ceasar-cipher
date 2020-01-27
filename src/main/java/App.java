@@ -1,6 +1,4 @@
-import com.sun.tools.jdeprscan.scan.Scan;
 
-import java.awt.*;
 import java.util.Scanner;
 
 public class App {
@@ -9,10 +7,16 @@ public class App {
         System.out.println("Input String: ");
 
         String output = new String();
-        output = scanner.next();
+        output = scanner.nextLine();
 
-        System.out.println("Encrypted String: " + Encode.encrypt(output, 3));
-        System.out.println("Decrypted String: " + Encode.decrpt(Encode.encrypt(output, 3), 3));
+        System.out.println("Enter Key: ");
+        String key = scanner.nextLine();
+
+        int shKey = Integer.parseInt(key);
+
+
+        System.out.println("Encrypted String: " + Encode.encrypt(output, shKey));
+        System.out.println("Decrypted String: " + Encode.decrpt(Encode.encrypt(output, shKey), shKey));
 
         scanner.close();
     }

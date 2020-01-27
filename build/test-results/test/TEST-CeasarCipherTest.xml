@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="CeasarCipherTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2020-01-26T07:27:15" hostname="andrew-x1" time="0.003">
+<testsuite name="CeasarCipherTest" tests="2" skipped="0" failures="1" errors="0" timestamp="2020-01-26T11:07:16" hostname="andrew-x1" time="0.014">
   <properties/>
-  <testcase name="ceasarCipher_userInputIsString_true" classname="CeasarCipherTest" time="0.003">
-    <failure message="java.lang.AssertionError: expected:&lt;true&gt; but was:&lt;^[a-zA-Z]*$&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;true&gt; but was:&lt;^[a-zA-Z]*$&gt;
+  <testcase name="ceasarCipher_userInputIsString_true" classname="CeasarCipherTest" time="0.012">
+    <failure message="java.lang.AssertionError: expected:&lt;true&gt; but was:&lt;com.sun.org.apache.xpath.internal.operations.String@73bf01b4&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;true&gt; but was:&lt;com.sun.org.apache.xpath.internal.operations.String@73bf01b4&gt;
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
 	at org.junit.Assert.assertEquals(Assert.java:118)
 	at org.junit.Assert.assertEquals(Assert.java:144)
-	at CeasarCipherTest.ceasarCipher_userInputIsString_true(CeasarCipherTest.java:17)
+	at CeasarCipherTest.ceasarCipher_userInputIsString_true(CeasarCipherTest.java:13)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -57,6 +57,7 @@
 	at java.base/java.lang.Thread.run(Thread.java:834)
 </failure>
   </testcase>
+  <testcase name="ceasarCipher_identifyCharacterWithinSentence_char" classname="CeasarCipherTest" time="0.002"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

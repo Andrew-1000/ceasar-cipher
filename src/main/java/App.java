@@ -14,7 +14,7 @@ public class App {
 
         int shKey = Integer.parseInt(key);
 
-
+        System.out.println("Input String: " + output);
         System.out.println("Encrypted String: " + Encode.encrypt(output, shKey));
         System.out.println("Decrypted String: " + Decrypt.decrpt(Encode.encrypt(output, shKey), shKey));
 

@@ -2,7 +2,18 @@ import java.io.Console;
 import java.util.Scanner;
 
 public class Encode {
+    public static final String letters = "abcdefghijklmnopqrstuvwxyz";
 
+    public static String encrypt(String newString, int shiftKey){
+        newString = newString.toLowerCase();
+        String cipher = " ";
+        for (int x = 0; x < newString.length(); x++) {
+            int letterPosition = letters.indexOf(newString.charAt(x));
+            int key = (letterPosition + shiftKey) % 26;
+            char changeValue = letters.charAt(key);
+        }
+        return cipher;
+    }
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -13,10 +24,10 @@ public class Encode {
         System.out.println("Please Provide Key:");
         int key = scanner.nextInt();
 
-        String cipher = " ";
+
         char letters;
 
-        for (int x = 0; x < newString.length(); x++) {
+         {
 
             //Shift one character
             letters = newString.charAt(x);

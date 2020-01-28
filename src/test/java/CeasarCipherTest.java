@@ -10,23 +10,21 @@ public class CeasarCipherTest {
     public void ceasarCipher_userInputIsString_true() {
 
         String isString = new String();
-        assertEquals(true, isString );
+        assertEquals(true, isString instanceof String);
+
+    }
 
 
-        //Checks whether userInput is string
-        //Used Regular Expression
-//        return ((string != null)
-//                && (!string.equals(""))
-//                && (string.matches("^[a-zA-Z]*$")));
-
+    @Test
+    public void encrypt_confirmsEncryptionWorks_encryptedText() {
+        Encode iStrng = new Encode();
+        assertEquals("i", iStrng.encrypt("h", 1) );
     }
 
     @Test
 
-    public void ceasarCipher_identifyCharacterWithinSentence_char() {
-        Character[] expectedResult = {'a','b', 'c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'};
-        assertArrayEquals(expectedResult, expectedResult);
-
-
+    public void decrypt_confirms_DecryptionWorks_decrytpedtText() {
+        Decrypt iString = new Decrypt();
+        assertEquals("h",iString.decrpt("i", 1));
     }
 }

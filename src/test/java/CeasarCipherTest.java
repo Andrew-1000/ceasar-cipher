@@ -6,15 +6,10 @@ import static org.junit.Assert.*;
 public class CeasarCipherTest {
 
     @Test
-
     public void ceasarCipher_userInputIsString_true() {
-
-        String isString = new String();
-        assertEquals(true, isString instanceof String);
-
+        CeasarCipher testCeasarCipher = new CeasarCipher("S", 8);
+        assertEquals("S", testCeasarCipher.getString());
     }
-
-
     @Test
     public void encrypt_confirmsEncryptionWorks_encryptedText() {
         Encode iStrng = new Encode();

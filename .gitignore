@@ -1,0 +1,10 @@
+
+.gitignore
+.gradle/5.2.1/vcsMetadata-1/
+branches/
+build/generated/
+build/tmp/
+objects/
+refs/
+src/main/resources/
+src/test/resources/
